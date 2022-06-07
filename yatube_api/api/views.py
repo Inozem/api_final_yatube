@@ -3,7 +3,7 @@ from rest_framework.pagination import LimitOffsetPagination
 
 from api import serializers
 from api.permissions import IsOwnerOrReadOnly
-from posts.models import Group, Follow, Post, User
+from posts.models import Group, Follow, Post
 
 
 class ListCreateViewSet(mixins.ListModelMixin, mixins.CreateModelMixin,
